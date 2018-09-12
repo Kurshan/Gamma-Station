@@ -1,8 +1,11 @@
 /datum/hud/proc/human_hud(ui_style='icons/mob/screen1_White.dmi', ui_color = "#ffffff", ui_alpha = 255)
-
 	src.adding = list()
 	src.other = list()
 	src.hotkeybuttons = list() //These can be disabled for hotkey usersx
+	to_chat(world, ui_style)
+	if(ui_style == "Walter")
+		human_hud_new()
+		return
 
 	var/obj/screen/using
 	var/obj/screen/inventory/inv_box
@@ -442,8 +445,6 @@
 					mymob.gun_run_icon.icon_state = "gun0"
 				src.adding += mymob.gun_run_icon
 			src.adding += mymob.gun_move_icon
-
-
 	mymob.client.screen = list()
 
 	mymob.client.screen += list( mymob.throw_icon, mymob.zone_sel, mymob.internals, mymob.healths, mymob.healthdoll, mymob.pullin, mymob.gun_setting_icon, lingchemdisplay, lingstingdisplay) //, mymob.hands, mymob.rest, mymob.sleep) //, mymob.mach )

@@ -505,7 +505,7 @@
 		src.pulling = AM
 		AM.pulledby = src
 		if(pullin)
-			pullin.update_icon(src)
+			pullin.update_icon(src, H_PULL)
 		if(ismob(AM))
 			var/mob/M = AM
 			if(!iscarbon(src))
@@ -531,7 +531,7 @@
 		pulling.pulledby = null
 		pulling = null
 		if(pullin)
-			pullin.update_icon(src)
+			pullin.update_icon(src, H_PULL)
 		count_pull_debuff()
 
 /mob/proc/count_pull_debuff()

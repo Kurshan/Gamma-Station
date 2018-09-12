@@ -1392,7 +1392,6 @@
 					if(2)
 						healths.icon_state = "health7"
 					else
-						//switch(health - halloss)
 						switch(100 - ((species && species.flags[NO_PAIN] && !species.flags[IS_SYNTHETIC]) ? 0 : traumatic_shock))
 							if(100 to INFINITY)
 								healths.icon_state = "health0"

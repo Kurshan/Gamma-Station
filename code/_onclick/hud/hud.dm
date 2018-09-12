@@ -1,14 +1,6 @@
 /*
 	The global hud:
 	Uses the same visual objects for all players.
-*/
-
-/datum/hud/var/obj/screen/grab_intent
-/datum/hud/var/obj/screen/hurt_intent
-/datum/hud/var/obj/screen/disarm_intent
-/datum/hud/var/obj/screen/help_intent
-
-/*
 	The hud datum
 	Used to show and hide huds for all the different mob types,
 	including inventories and item quick actions.
@@ -32,6 +24,13 @@
 	var/obj/screen/action_intent
 	var/obj/screen/move_intent
 	var/obj/screen/staminadisplay
+	var/obj/screen/grab_intent
+	var/obj/screen/help_intent
+	var/obj/screen/disarm_intent
+	var/obj/screen/hurt_intent
+
+
+
 
 	var/list/adding
 	var/list/other

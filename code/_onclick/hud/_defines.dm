@@ -140,3 +140,10 @@
 #define ui_ian_head    "CENTER-3:14,SOUTH:5"
 #define ui_stamina     "EAST-1:28,CENTER:5"
 #define ui_ian_pselect "EAST-4:22,SOUTH:5"
+
+#define H_WALK 1
+#define H_SHOW 2
+#define H_GIVE 4
+#define H_THROW 8
+#define H_DROP 16
+#define H_PULL 32
